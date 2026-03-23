@@ -30,6 +30,7 @@ line, = ax.plot(new_y[0], new_z[0])
 ax.set_aspect("equal")
 ax.set_xlim(-1.5, 1.5)
 ax.set_ylim(-1.5, 1.5)
+ax.grid(True)
 
 def update(i):
     line.set_data(new_y[i], new_z[i])
