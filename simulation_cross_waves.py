@@ -11,7 +11,7 @@ h_cross_t = A_cross * np.cos(omega*t)
 #define the distribution of points along the circunference of radius 1 on the yz plane
 
 
-theta = np.linspace(0, 2*np.pi, 100)
+theta = np.linspace(0, 2*np.pi, 60)
 y = np.cos(theta)
 z = np.sin(theta)
 
@@ -26,7 +26,7 @@ for i in range(len(t)):
 
 
 fig, ax = plt.subplots()
-line, = ax.plot(new_y[0], new_z[0])
+line, = ax.plot(new_y[0], new_z[0], 'o')
 ax.set_aspect("equal")
 ax.set_xlim(-1.5, 1.5)
 ax.set_ylim(-1.5, 1.5)
